@@ -1,0 +1,42 @@
+                            OLS Regression Results
+==============================================================================
+Dep. Variable:                   year   R-squared:                       0.506
+Model:                            OLS   Adj. R-squared:                  0.505
+Method:                 Least Squares   F-statistic:                     4364.
+Date:                Thu, 16 Mar 2023   Prob (F-statistic):               0.00
+Time:                        08:58:11   Log-Likelihood:                -39842.
+No. Observations:               34152   AIC:                         7.970e+04
+Df Residuals:                   34143   BIC:                         7.978e+04
+Df Model:                           8
+Covariance Type:            nonrobust
+================================================================================
+                   coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------
+const         2018.2538      0.031   6.45e+04      0.000    2018.192    2018.315
+week_day         0.0024      0.003      0.823      0.410      -0.003       0.008
+holiday_type    -0.0055      0.012     -0.453      0.650      -0.029       0.018
+bitcoin       3.363e-05   2.73e-07    123.350      0.000    3.31e-05    3.42e-05
+temperature      0.0537      0.001     67.937      0.000       0.052       0.055
+power            0.0061   9.85e-05     61.624      0.000       0.006       0.006
+hour             0.0005      0.001      0.862      0.389      -0.001       0.002
+day             -0.0009      0.000     -1.834      0.067      -0.002    6.09e-05
+month           -0.0186      0.001    -14.490      0.000      -0.021      -0.016
+==============================================================================
+Omnibus:                     2552.434   Durbin-Watson:                   0.008
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             3175.569
+Skew:                           0.747   Prob(JB):                         0.00
+Kurtosis:                       2.966   Cond. No.                     2.24e+05
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 2.24e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+
+Spearman correlation coefficient between column 1 and column 6: 0.1586270400071733, p-value: 2.830516333049999e-191 # datetime
+Spearman correlation coefficient between column 2 and column 6: -0.002200106835730118, p-value: 0.6843230502708078 # week_day
+Spearman correlation coefficient between column 3 and column 6: -0.021695544241605302, p-value: 6.079128447566915e-05 # holiday
+Spearman correlation coefficient between column 4 and column 6: 0.20011844112776636, p-value: 1.7736773065336122e-305 # bitcoin
+Spearman correlation coefficient between column 5 and column 6: -0.907796442284892, p-value: 0.0 # temperature
+
